@@ -1,0 +1,324 @@
+/*
+ * Stylesheet for Asaf Dabush's portfolio site
+ *
+ * This stylesheet establishes a coherent visual language across the site: a dark
+ * gradient foundation with vibrant teal and orange accents. It uses the
+ * Montserrat typeface for headings and body text, and applies responsive
+ * typography and layout rules to ensure the site looks good on desktops and
+ * mobile devices. Cards, lists and timeline elements are styled consistently
+ * with subtle shadows and rounded corners.
+ */
+
+/* Base styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  line-height: 1.6;
+  color: #F5F5F5;
+  background: linear-gradient(135deg, #071f36 0%, #0e4167 100%);
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3 {
+  color: #ffffff;
+  line-height: 1.3;
+}
+
+section {
+  padding: 3rem 1.5rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Hero section */
+.hero {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+  background: radial-gradient(circle at center top, #0e4167 0%, #071f36 100%);
+}
+
+.hero-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.hero-text {
+  flex: 1 1 50%;
+  max-width: 600px;
+}
+
+.hero-text h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  color: #4cd8d4;
+}
+
+.hero-text .tagline {
+  font-size: 1.25rem;
+  font-weight: 500;
+  margin-bottom: 1rem;
+  color: #a8e1df;
+}
+
+.hero-text .summary {
+  font-size: 1rem;
+  margin-bottom: 1.5rem;
+  color: #d7e7ed;
+}
+
+.contact-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.contact-item {
+  display: inline-flex;
+  align-items: center;
+  font-size: 0.95rem;
+  color: #4cd8d4;
+  text-decoration: none;
+  border: 1px solid #4cd8d4;
+  padding: 0.4rem 0.8rem;
+  border-radius: 6px;
+  transition: background 0.3s, color 0.3s;
+}
+
+.contact-item i {
+  margin-right: 0.4rem;
+}
+
+.contact-item:hover {
+  background: #4cd8d4;
+  color: #071f36;
+}
+
+.hero-image {
+  flex: 1 1 40%;
+  text-align: center;
+}
+
+.hero-image img {
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+}
+
+/* Generic section heading */
+.section h2 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  color: #4cd8d4;
+  text-align: center;
+}
+
+/* About section */
+.about p {
+  max-width: 800px;
+  margin: 0 auto;
+  font-size: 1rem;
+  color: #d7e7ed;
+  text-align: center;
+}
+
+/* Skills section */
+.skill-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+}
+
+.skill-card {
+  background: #0b2f4a;
+  border-radius: 10px;
+  padding: 1.5rem;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.4);
+  transition: transform 0.2s;
+}
+
+.skill-card:hover {
+  transform: translateY(-5px);
+}
+
+.skill-card h3 {
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
+  color: #ffa662;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.skill-card ul {
+  list-style: none;
+  color: #d7e7ed;
+  font-size: 0.95rem;
+}
+
+.skill-card li::before {
+  content: '●';
+  color: #4cd8d4;
+  margin-right: 0.5rem;
+  font-size: 0.6rem;
+}
+
+/* Projects section */
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.project-card {
+  background: #0b2f4a;
+  border-radius: 10px;
+  padding: 1.5rem;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.4);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: transform 0.2s;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+}
+
+.project-card h3 {
+  font-size: 1.3rem;
+  margin-bottom: 0.5rem;
+  color: #ffa662;
+}
+
+.project-period {
+  font-size: 0.85rem;
+  color: #a8e1df;
+  margin-bottom: 0.8rem;
+}
+
+.project-card p {
+  flex-grow: 1;
+  color: #d7e7ed;
+  font-size: 0.95rem;
+  margin-bottom: 1rem;
+}
+
+.tech-list {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.tech-list li {
+  background: #08345b;
+  color: #4cd8d4;
+  padding: 0.25rem 0.6rem;
+  border-radius: 4px;
+  font-size: 0.8rem;
+}
+
+.subheading {
+  font-size: 1.5rem;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  text-align: center;
+  color: #ffa662;
+}
+
+/* Experience section */
+.timeline {
+  border-left: 2px solid #4cd8d4;
+  margin: 0 auto;
+  max-width: 800px;
+  padding-left: 1.5rem;
+}
+
+.timeline-item {
+  margin-bottom: 2rem;
+}
+
+.timeline-item h3 {
+  font-size: 1.25rem;
+  color: #ffa662;
+  margin-bottom: 0.3rem;
+}
+
+.timeline-period {
+  font-size: 0.85rem;
+  color: #a8e1df;
+  margin-bottom: 0.5rem;
+  display: block;
+}
+
+.timeline-item p {
+  color: #d7e7ed;
+  font-size: 0.95rem;
+}
+
+/* Education section */
+.education-item {
+  background: #0b2f4a;
+  border-radius: 10px;
+  padding: 1.5rem;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.4);
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.education-item h3 {
+  font-size: 1.3rem;
+  color: #ffa662;
+  margin-bottom: 0.5rem;
+}
+
+.education-item p {
+  color: #d7e7ed;
+  font-size: 0.95rem;
+  margin-bottom: 0.5rem;
+}
+
+/* Footer */
+.footer {
+  text-align: center;
+  padding: 1.5rem;
+  background: #0e4167;
+  color: #a8e1df;
+  font-size: 0.9rem;
+}
+
+.footer span {
+  color: #4cd8d4;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .hero-content {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2rem;
+  }
+  .hero-text {
+    max-width: none;
+  }
+  .hero-text h1 {
+    font-size: 2.5rem;
+  }
+  .hero-text .tagline {
+    font-size: 1.1rem;
+  }
+  section {
+    padding: 2rem 1rem;
+  }
+}

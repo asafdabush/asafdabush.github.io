@@ -1,0 +1,199 @@
+<!--
+  Portfolio Website for Asaf Dabush
+
+  This single–page website presents a concise overview of Asaf's education, work experience,
+  projects, and skills. The design draws inspiration from modern portfolio layouts while
+  introducing its own look and feel with a dark gradient backdrop and vibrant accent colors.
+  A JavaScript snippet dynamically fetches up‑to‑date information about Asaf's public GitHub
+  repositories to keep the Projects section fresh without manual updates. To deploy on
+  GitHub Pages, simply place these files in the repository root or a dedicated docs
+  directory and enable GitHub Pages from the repository settings.
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Asaf Dabush • Electrical Engineering Portfolio</title>
+  <!-- Link to Google Fonts for improved typography -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
+  <!-- Font Awesome icons (self‑hosted alternative could be used for offline deployments) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-j5Yyxi4jsI1XepJGXGyZzE2yWlW0PBrCYnLI8yErcjgX81wzsYeL2P1sFJM0FZ9hngypahNTc+eZbq7udLa24g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- Local stylesheet -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Header / Hero Section -->
+  <header class="hero">
+    <div class="hero-content">
+      <div class="hero-text">
+        <h1>Asaf Dabush</h1>
+        <p class="tagline">Electrical Engineering Student &amp; Hardware Designer</p>
+        <p class="summary">
+          Third‑year Electrical &amp; Electronics Engineering student with a passion for
+          digital hardware design, PCB layouts and real‑world lab work. Experienced in
+          Verilog, MATLAB and signal validation, I enjoy tackling challenges that sit
+          at the intersection of hardware and software.
+        </p>
+        <div class="contact-links">
+          <a href="mailto:Asafd2210@gmail.com" title="Email" class="contact-item"><i class="fa fa-envelope"></i> Asafd2210@gmail.com</a>
+          <a href="https://www.linkedin.com/in/asaf-dabush" target="_blank" rel="noopener" title="LinkedIn" class="contact-item"><i class="fa fa-linkedin"></i> LinkedIn</a>
+          <a href="https://github.com/asafdabush" target="_blank" rel="noopener" title="GitHub" class="contact-item"><i class="fa fa-github"></i> GitHub</a>
+        </div>
+      </div>
+      <div class="hero-image">
+        <!-- Decorative illustration representing electrical engineering -->
+        <img src="hero.png" alt="Abstract representation of electronic circuits and signal processing">
+      </div>
+    </div>
+  </header>
+
+  <!-- About Section -->
+  <section id="about" class="section about">
+    <h2>About Me</h2>
+    <p>
+      I’m currently pursuing my B.Sc. in Electrical &amp; Electronics Engineering at Ariel University,
+      where I’ve developed a strong foundation in digital circuit design, control systems and
+      signal processing. Alongside my studies, I work as a research assistant and teaching
+      assistant, gaining practical experience in lab environments, optical characterization and
+      mentoring fellow students. My goal is to bridge theoretical knowledge with
+      hands‑on engineering to build robust, innovative solutions.
+    </p>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="section skills">
+    <h2>Skills</h2>
+    <div class="skill-cards">
+      <div class="skill-card">
+        <h3><i class="fa fa-microchip"></i> Hardware Design</h3>
+        <ul>
+          <li>Verilog &amp; digital logic</li>
+          <li>PCB layout (KiCad)</li>
+          <li>Hardware debugging</li>
+          <li>Digital circuit design</li>
+        </ul>
+      </div>
+      <div class="skill-card">
+        <h3><i class="fa fa-desktop"></i> Simulation &amp; Tools</h3>
+        <ul>
+          <li>MATLAB &amp; Simulink</li>
+          <li>Multisim, PSIM, Control System Toolbox</li>
+          <li>Overleaf &amp; Git</li>
+          <li>Excel &amp; data analysis</li>
+        </ul>
+      </div>
+      <div class="skill-card">
+        <h3><i class="fa fa-flask"></i> Lab &amp; Test Equipment</h3>
+        <ul>
+          <li>Oscilloscopes &amp; FTIR systems</li>
+          <li>Network analyzers</li>
+          <li>Soldering &amp; prototyping</li>
+          <li>Cryostat &amp; vacuum setups</li>
+        </ul>
+      </div>
+      <div class="skill-card">
+        <h3><i class="fa fa-language"></i> Languages</h3>
+        <ul>
+          <li>Hebrew – native</li>
+          <li>English – fluent</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="section projects">
+    <h2>Highlighted Projects</h2>
+    <div class="projects-grid">
+      <!-- Manually curated projects from the resume -->
+      <article class="project-card">
+        <h3>Terahertz &amp; FTIR Characterization</h3>
+        <p class="project-period">Nov 2024</p>
+        <p>
+          Designed an optical setup integrating FTIR, cryostat and vacuum chambers for
+          characterizing 2D Sb₂Se₃ crystals. Analyzed spectral data in MATLAB to extract
+          material properties and assess crystal behavior at terahertz frequencies.
+        </p>
+        <ul class="tech-list">
+          <li>MATLAB</li>
+          <li>FTIR</li>
+          <li>Cryostat systems</li>
+        </ul>
+      </article>
+      <article class="project-card">
+        <h3>Digital Safe‑Lock System</h3>
+        <p class="project-period">Feb 2025 – May 2025</p>
+        <p>
+          Developed a fault‑tolerant digital locking mechanism using shift registers and
+          logic ICs. Designed the PCB in KiCad and implemented test routines for
+          reliability under various operating conditions.
+        </p>
+        <ul class="tech-list">
+          <li>Verilog</li>
+          <li>PCB layout (KiCad)</li>
+          <li>Hardware debugging</li>
+        </ul>
+      </article>
+    </div>
+    <!-- Dynamic GitHub projects will be inserted here -->
+    <h3 class="subheading">Recent GitHub Activity</h3>
+    <div id="github-projects" class="projects-grid"></div>
+  </section>
+
+  <!-- Experience Section -->
+  <section id="experience" class="section experience">
+    <h2>Experience</h2>
+    <div class="timeline">
+      <div class="timeline-item">
+        <h3>Research Assistant</h3>
+        <span class="timeline-period">Oct 2024 – Present • Ariel University</span>
+        <p>
+          Conduct system‑level signal validation and integration testing for infrared
+          optical systems using MATLAB and FTIR instrumentation.
+        </p>
+      </div>
+      <div class="timeline-item">
+        <h3>Teaching Assistant</h3>
+        <span class="timeline-period">Oct 2024 – Present • Ariel University</span>
+        <p>
+          Lead tutorials and mentor over 40 students in mechanics, electricity and
+          signals &amp; systems courses. Design exercises and guide lab experiments.
+        </p>
+      </div>
+      <div class="timeline-item">
+        <h3>Combat Soldier</h3>
+        <span class="timeline-period">Mar 2018 – Nov 2020 • IDF</span>
+        <p>
+          Led operational teams under high pressure with an emphasis on discipline,
+          coordination and efficient communication.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Education Section -->
+  <section id="education" class="section education">
+    <h2>Education</h2>
+    <div class="education-item">
+      <h3>B.Sc. Electrical &amp; Electronics Engineering (with honors)</h3>
+      <span class="timeline-period">Oct 2022 – Oct 2027 • Ariel University</span>
+      <p>GPA: 86/100</p>
+      <p>
+        Relevant coursework: Control Systems (100), Signals &amp; Systems (100), Random
+        Signals &amp; Noise (95), Digital Circuits (90), Advanced Labs (97)
+      </p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>&copy; <span id="year"></span> Asaf Dabush. All rights reserved.</p>
+  </footer>
+
+  <!-- JavaScript to fetch GitHub repositories and update dynamic content -->
+  <script src="script.js"></script>
+</body>
+</html>
