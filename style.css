@@ -363,17 +363,23 @@ section {
   bottom: -28px;
   background: #0b1f33;
 }
+/* Project image thumbnails */
 .project-images {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
-  gap: 0.8rem;
-  margin: 0.8rem 0 1rem;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 10px;
+  margin: 10px 0 14px;
+}
+
+.project-images a {
+  display: block;
 }
 
 .project-images img {
-  width: 100%;
-  height: 120px;
+  width: 100% !important;
+  height: 120px !important;
   object-fit: cover;
-  border-radius: 8px;
+  border-radius: 10px;
   box-shadow: 0 4px 14px rgba(0, 0, 0, 0.45);
+  display: block;
 }
