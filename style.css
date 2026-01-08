@@ -177,12 +177,13 @@ section {
 }
 
 /* Projects section */
-.projects-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 1.5rem;
-  margin-bottom: 2rem;
+.project-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;  /* במקום space-between */
+  gap: 10px;                    /* ריווח טבעי בין האלמנטים */
 }
+
 
 .project-card {
   background: #0b2f4a;
