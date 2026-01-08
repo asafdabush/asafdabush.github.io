@@ -141,6 +141,13 @@ section {
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 1.5rem;
 }
+.skill-subtitle{
+  margin-top: 1rem;
+  margin-bottom: 0.4rem;
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #4cd8d4;
+}
 
 .skill-card {
   background: #0b2f4a;
