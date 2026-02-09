@@ -434,6 +434,9 @@ section {
   border-radius: 10px;
   box-shadow: 0 4px 14px rgba(0, 0, 0, 0.45);
   display: block;
+}
+
+/* ROC images (EEG project) */
 .roc-images{
   display:flex;
   gap:12px;
