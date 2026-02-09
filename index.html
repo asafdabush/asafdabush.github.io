@@ -1,10 +1,10 @@
 <!--
-  Portfolio Website for Asaf Dabush
+  Portfolio Website for Asaf Dabush
 
   This single–page website presents a concise overview of Asaf's education, work experience,
   projects, and skills. The design draws inspiration from modern portfolio layouts while
   introducing its own look and feel with a dark gradient backdrop and vibrant accent colors.
-  A JavaScript snippet dynamically fetches up‑to‑date information about Asaf's public GitHub
+  A JavaScript snippet dynamically fetches up-to-date information about Asaf's public GitHub
   repositories to keep the Projects section fresh without manual updates. To deploy on
   GitHub Pages, simply place these files in the repository root or a dedicated docs
   directory and enable GitHub Pages from the repository settings.
@@ -14,40 +14,52 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Asaf Dabush • Electrical Engineering Portfolio</title>
+  <title>Asaf Dabush • Electrical Engineering Portfolio</title>
+
   <!-- Link to Google Fonts for improved typography -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
-  <!-- Font Awesome icons (self‑hosted alternative could be used for offline deployments) -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-j5Yyxi4jsI1XepJGXGyZzE2yWlW0PBrCYnLI8yErcjgX81wzsYeL2P1sFJM0FZ9hngypahNTc+eZbq7udLa24g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- Font Awesome icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-j5Yyxi4jsI1XepJGXGyZzE2yWlW0PBrCYnLI8yErcjgX81wzsYeL2P1sFJM0FZ9hngypahNTc+eZbq7udLa24g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
   <!-- Local stylesheet -->
   <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
   <!-- Header / Hero Section -->
   <header class="hero">
     <div class="hero-content">
       <div class="hero-text">
-        <h1>Asaf Dabush</h1>
+        <h1>Asaf Dabush</h1>
         <p class="tagline">Electrical Engineering Student &amp; Hardware Designer</p>
         <p class="summary">
-          Fourth‑year Electrical &amp; Electronics Engineering student with a passion for
-          digital hardware design, PCB layouts and real‑world lab work. Experienced in
+          Fourth-year Electrical &amp; Electronics Engineering student with a passion for
+          digital hardware design, PCB layouts and real-world lab work. Experienced in
           Verilog, MATLAB and signal validation, I enjoy tackling challenges that sit
           at the intersection of hardware and software.
         </p>
         <div class="contact-links">
-          <a href="mailto:Asafd2210@gmail.com" title="Email" class="contact-item"><i class="fa fa-envelope"></i> Asafd2210@gmail.com</a>
-          <a href="https://www.linkedin.com/in/asaf-dabush" target="_blank" rel="noopener" title="LinkedIn" class="contact-item"><i class="fa fa-linkedin"></i> LinkedIn</a>
-          <a href="https://github.com/asafdabush" target="_blank" rel="noopener" title="GitHub" class="contact-item"><i class="fa fa-github"></i> GitHub</a>
+          <a href="mailto:Asafd2210@gmail.com" title="Email" class="contact-item">
+            <i class="fa fa-envelope"></i> Asafd2210@gmail.com
+          </a>
+          <a href="https://www.linkedin.com/in/asaf-dabush" target="_blank" rel="noopener" title="LinkedIn" class="contact-item">
+            <i class="fa fa-linkedin"></i> LinkedIn
+          </a>
+          <a href="https://github.com/asafdabush" target="_blank" rel="noopener" title="GitHub" class="contact-item">
+            <i class="fa fa-github"></i> GitHub
+          </a>
         </div>
       </div>
-      <div class="hero-image">
-  <img src="hero.png" alt="Abstract representation of electronic circuits and signal processing" class="hero-graphic">
-  <img src="profile.jpg" alt="Asaf Dabush" class="profile-pic">
-</div>
 
+      <div class="hero-image">
+        <img src="hero.png" alt="Abstract representation of electronic circuits and signal processing" class="hero-graphic">
+        <img src="profile.jpg" alt="Asaf Dabush" class="profile-pic">
+      </div>
     </div>
   </header>
 
@@ -60,7 +72,7 @@
       signal processing. Alongside my studies, I work as a research assistant and teaching
       assistant, gaining practical experience in lab environments, optical characterization and
       mentoring fellow students. My goal is to bridge theoretical knowledge with
-      hands‑on engineering to build robust, innovative solutions.
+      hands-on engineering to build robust, innovative solutions.
     </p>
   </section>
 
@@ -68,22 +80,23 @@
   <section id="skills" class="section skills">
     <h2>Skills</h2>
     <div class="skill-cards">
-    <div class="skill-card">
-  <h3>Hardware Design</h3>
-  <ul>
-    <li>Verilog & Digital Logic</li>
-    <li>Digital Circuit Design</li>
-    <li>PCB Layout (KiCad)</li>
-    <li>Hardware Debugging & Bring-up</li>
-  </ul>
 
-  <h4 class="skill-subtitle">Programming Languages</h4>
-  <ul>
-    <li>C / C++ (Embedded)</li>
-    <li>Verilog</li>
-    <li>Python</li>
-  </ul>
-</div>
+      <div class="skill-card">
+        <h3>Hardware Design</h3>
+        <ul>
+          <li>Verilog &amp; Digital Logic</li>
+          <li>Digital Circuit Design</li>
+          <li>PCB Layout (KiCad)</li>
+          <li>Hardware Debugging &amp; Bring-up</li>
+        </ul>
+
+        <h4 class="skill-subtitle">Programming Languages</h4>
+        <ul>
+          <li>C / C++ (Embedded)</li>
+          <li>Verilog</li>
+          <li>Python</li>
+        </ul>
+      </div>
 
       <div class="skill-card">
         <h3><i class="fa fa-desktop"></i> Simulation &amp; Tools</h3>
@@ -94,6 +107,7 @@
           <li>Excel &amp; data analysis</li>
         </ul>
       </div>
+
       <div class="skill-card">
         <h3><i class="fa fa-flask"></i> Lab &amp; Test Equipment</h3>
         <ul>
@@ -103,6 +117,7 @@
           <li>Cryostat &amp; vacuum setups</li>
         </ul>
       </div>
+
       <div class="skill-card">
         <h3><i class="fa fa-language"></i> Languages</h3>
         <ul>
@@ -110,49 +125,53 @@
           <li>English – fluent</li>
         </ul>
       </div>
+
     </div>
   </section>
 
   <!-- Projects Section -->
   <section id="projects" class="section projects">
     <h2>Highlighted Projects</h2>
-    <div class="projects-grid">
-      <div class="project-card">
-        
-  <h3>Smart Soil Moisture Monitor (ESP32/ESP8266 + OLED)</h3>
-        <div class="project-images">
-  <img src="esp32_plant_setup.jpeg" alt="ESP32 plant monitoring system setup">
-  <img src="esp32_plant_sensor.jpeg" alt="Soil moisture sensor and ESP32 integration">
-</div>
 
-  <div class="project-period">2025</div>
-        
-  <p>
-    Built an end-to-end IoT system for a houseplant using a capacitive soil moisture sensor and a 0.96&quot; SSD1306 OLED.
-    Implemented practical dry/wet calibration to convert ADC readings into moisture %, sample-averaging for stable measurements,
-    and threshold-based “Water me” alerts. Extended the system to a private Home Assistant cloud (VMware) with live dashboards
-    and automations.
-  </p>
-  <ul class="tech-list">
-    <li>ESP32 / ESP8266</li>
-    <li>Embedded C/C++ (Arduino)</li>
-    <li>ADC</li>
-    <li>I2C</li>
-    <li>SSD1306 OLED</li>
-    <li>Calibration</li>
-    <li>Home Assistant</li>
-    <li>VMware</li>
-    <li>IoT Automation</li>
-  </ul>
-</div>
+    <div class="projects-grid">
+
+      <div class="project-card">
+        <h3>Smart Soil Moisture Monitor (ESP32/ESP8266 + OLED)</h3>
+
+        <div class="project-images">
+          <img src="esp32_plant_setup.jpeg" alt="ESP32 plant monitoring system setup">
+          <img src="esp32_plant_sensor.jpeg" alt="Soil moisture sensor and ESP32 integration">
+        </div>
+
+        <div class="project-period">2025</div>
+
+        <p>
+          Built an end-to-end IoT system for a houseplant using a capacitive soil moisture sensor and a 0.96&quot; SSD1306 OLED.
+          Implemented practical dry/wet calibration to convert ADC readings into moisture %, sample-averaging for stable measurements,
+          and threshold-based “Water me” alerts. Extended the system to a private Home Assistant cloud (VMware) with live dashboards
+          and automations.
+        </p>
+
+        <ul class="tech-list">
+          <li>ESP32 / ESP8266</li>
+          <li>Embedded C/C++ (Arduino)</li>
+          <li>ADC</li>
+          <li>I2C</li>
+          <li>SSD1306 OLED</li>
+          <li>Calibration</li>
+          <li>Home Assistant</li>
+          <li>VMware</li>
+          <li>IoT Automation</li>
+        </ul>
+      </div>
 
       <!-- Manually curated projects from the resume -->
       <article class="project-card">
         <h3>Terahertz &amp; FTIR Characterization</h3>
-        <p class="project-period">Nov 2024</p>
+        <p class="project-period">Nov 2024</p>
         <p>
           Designed an optical setup integrating FTIR, cryostat and vacuum chambers for
-          characterizing 2D Sb₂Se₃ crystals. Analyzed spectral data in MATLAB to extract
+          characterizing 2D Sb₂Se₃ crystals. Analyzed spectral data in MATLAB to extract
           material properties and assess crystal behavior at terahertz frequencies.
         </p>
         <ul class="tech-list">
@@ -161,11 +180,12 @@
           <li>Cryostat systems</li>
         </ul>
       </article>
+
       <article class="project-card">
-        <h3>Digital Safe‑Lock System</h3>
-        <p class="project-period">Feb 2025 – May 2025</p>
+        <h3>Digital Safe-Lock System</h3>
+        <p class="project-period">Feb 2025 – May 2025</p>
         <p>
-          Developed a fault‑tolerant digital locking mechanism using shift registers and
+          Developed a fault-tolerant digital locking mechanism using shift registers and
           logic ICs. Designed the PCB in KiCad and implemented test routines for
           reliability under various operating conditions.
         </p>
@@ -175,68 +195,78 @@
           <li>Hardware debugging</li>
         </ul>
       </article>
-    </div>
-   
+
       <article class="project-card">
-    <h3>Parkinson’s Disease EEG Analysis</h3>
-    <p class="project-period">2026</p>
-    <p>
-      Developed a comprehensive pipeline for processing resting-state EEG data to aid the diagnosis of Parkinson’s disease. Preprocessed raw EEG signals (resampling, filtering, artifact removal, FastICA), extracted features using higher-order statistics and other measures, and classified segments using SVM and bagged decision trees.
-    </p>
-    <ul class="tech-list">
-      <li>MATLAB</li>
-      <li>EEGLAB</li>
-      <li>ICA &amp; Higher-order statistics</li>
-      <li>Machine Learning (SVM &amp; Bagged Trees)</li>
-    </ul>
-  <div class="roc-images">
-  <figure>
-    <img src="ROC_All.png">
-    <figcaption>All Bands</figcaption>
-  </figure>
-  <figure>
-    <img src="ROC_Alpha.png">
-    <figcaption>Alpha Band</figcaption>
-  </figure>
-  <figure>
-    <img src="ROC_Beta.png">
-    <figcaption>Beta Band</figcaption>
-  </figure>
-</div>
->
-    <p>
-      <a href="Bio_medical_summery.pdf" target="_blank">Project Summary (PDF)</a> |
-      <a href="preprocessing_paper_faithful.m" target="_blank">Preprocessing Code</a> |
-      <a href="PD_HOS_Full_Extract_PaperFaithful_IC_NO_APPROX.m" target="_blank">Feature Extraction Code</a> |
-      <a href="segment_level_kfold.m" target="_blank">ML Script</a>
-    </p>
-  
-<!--Dyamic GitHub projects will be inserted here -->
-    <-- <h3 class="subheading">Recent GitHub Activity</h3> -->
-<!--     <div id="github-projects" class="projects-grid"></div> -->
-  </!-- Experience Section -->
+        <h3>Parkinson’s Disease EEG Analysis</h3>
+        <p class="project-period">2026</p>
+        <p>
+          Developed a comprehensive pipeline for processing resting-state EEG data to aid the diagnosis of Parkinson’s disease.
+          Preprocessed raw EEG signals (resampling, filtering, artifact removal, FastICA), extracted features using higher-order
+          statistics and other measures, and classified segments using SVM and bagged decision trees.
+        </p>
+
+        <ul class="tech-list">
+          <li>MATLAB</li>
+          <li>EEGLAB</li>
+          <li>ICA &amp; Higher-order statistics</li>
+          <li>Machine Learning (SVM &amp; Bagged Trees)</li>
+        </ul>
+
+        <div class="roc-images">
+          <figure>
+            <img src="ROC_All.png" alt="ROC curve for all bands">
+            <figcaption>All Bands</figcaption>
+          </figure>
+          <figure>
+            <img src="ROC_Alpha.png" alt="ROC curve for alpha band">
+            <figcaption>Alpha Band</figcaption>
+          </figure>
+          <figure>
+            <img src="ROC_Beta.png" alt="ROC curve for beta band">
+            <figcaption>Beta Band</figcaption>
+          </figure>
+        </div>
+
+        <p>
+          <a href="Bio_medical_summery.pdf" target="_blank" rel="noopener">Project Summary (PDF)</a> |
+          <a href="preprocessing_paper_faithful.m" target="_blank" rel="noopener">Preprocessing Code</a> |
+          <a href="PD_HOS_Full_Extract_PaperFaithful_IC_NO_APPROX.m" target="_blank" rel="noopener">Feature Extraction Code</a> |
+          <a href="segment_level_kfold.m" target="_blank" rel="noopener">ML Script</a>
+        </p>
+      </article>
+
+      <!-- Dynamic GitHub projects will be inserted here -->
+      <!-- <h3 class="subheading">Recent GitHub Activity</h3> -->
+      <!-- <div id="github-projects" class="projects-grid"></div> -->
+
+    </div> <!-- /projects-grid -->
+  </section> <!-- /projects -->
+
+  <!-- Experience Section -->
   <section id="experience" class="section experience">
     <h2>Experience</h2>
     <div class="timeline">
       <div class="timeline-item">
         <h3>Research Assistant</h3>
-        <span class="timeline-period">Oct 2024 – Present • Ariel University</span>
+        <span class="timeline-period">Oct 2024 – Present • Ariel University</span>
         <p>
-          Conduct system‑level signal validation and integration testing for infrared
+          Conduct system-level signal validation and integration testing for infrared
           optical systems using MATLAB and FTIR instrumentation.
         </p>
       </div>
+
       <div class="timeline-item">
         <h3>Teaching Assistant</h3>
-        <span class="timeline-period">Oct 2024 – Present • Ariel University</span>
+        <span class="timeline-period">Oct 2024 – Present • Ariel University</span>
         <p>
           Lead tutorials and mentor over 40 students in mechanics, electricity and
           signals &amp; systems courses. Design exercises and guide lab experiments.
         </p>
       </div>
+
       <div class="timeline-item">
         <h3>Combat Soldier</h3>
-        <span class="timeline-period">Mar 2018 – Nov 2020 • IDF</span>
+        <span class="timeline-period">Mar 2018 – Nov 2020 • IDF</span>
         <p>
           Led operational teams under high pressure with an emphasis on discipline,
           coordination and efficient communication.
@@ -250,7 +280,7 @@
     <h2>Education</h2>
     <div class="education-item">
       <h3>B.Sc. Electrical &amp; Electronics Engineering (with honors)</h3>
-      <span class="timeline-period">Oct 2022 – Oct 2026 • Ariel University</span>
+      <span class="timeline-period">Oct 2022 – Oct 2026 • Ariel University</span>
       <p>GPA: 86/100</p>
       <p>
         Relevant coursework: Control Systems (100), Signals &amp; Systems (100), Random
@@ -261,7 +291,7 @@
 
   <!-- Footer -->
   <footer class="footer">
-    <p>&copy; <span id="year"></span> Asaf Dabush. All rights reserved.</p>
+    <p>&copy; <span id="year"></span> Asaf Dabush. All rights reserved.</p>
   </footer>
 
   <!-- JavaScript to fetch GitHub repositories and update dynamic content -->
