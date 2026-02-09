@@ -450,3 +450,9 @@ section {
   border-radius: 6px;
   box-shadow: 0 4px 12px rgba(0,0,0,0.25);
 }
+.roc-images figure {
+  max-width: 30%;
+  text-align: center;
+  color: #9fdcff;
+  font-size: 0.9rem;
+}
