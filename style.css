@@ -434,25 +434,32 @@ section {
   border-radius: 10px;
   box-shadow: 0 4px 14px rgba(0, 0, 0, 0.45);
   display: block;
-}
-.roc-images {
-  display: flex;
-  gap: 12px;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap; /* למסכים קטנים */
-  margin-top: 15px;
+.roc-images{
+  display:flex;
+  gap:12px;
+  justify-content:center;
+  align-items:flex-start;
+  flex-wrap:wrap;
+  margin-top:15px;
 }
 
-.roc-images img {
-  max-width: 30%;
-  height: auto;
-  border-radius: 6px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.25);
-}
-.roc-images figure {
-  max-width: 30%;
+.roc-images figure{
+  width: 30%;
+  margin: 0;
   text-align: center;
   color: #9fdcff;
   font-size: 0.9rem;
+}
+
+.roc-images img{
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+  display:block;
+}
+
+.roc-images figcaption{
+  margin-top: 6px;
+  opacity: 0.9;
 }
