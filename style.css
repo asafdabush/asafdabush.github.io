@@ -467,3 +467,14 @@ section {
   opacity: 0.9;
 }
 img { max-width: 100%; height: auto; }
+
+/* readable links inside project cards */
+.project-card a{
+  color: #5fd4d4;
+  text-decoration: none;
+  border-bottom: 1px solid rgba(95,212,212,0.4);
+}
+.project-card a:hover{
+  color: #ffa662;
+  border-bottom-color: #ffa662;
+}

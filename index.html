@@ -14,7 +14,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Asaf Dabush • Electrical Engineering Portfolio</title>
+  <title>Asaf Dabush • Electronics Engineer · Signal Processing &amp; Communications</title>
 
   <!-- Link to Google Fonts for improved typography -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -36,12 +36,11 @@
     <div class="hero-content">
       <div class="hero-text">
         <h1>Asaf Dabush</h1>
-        <p class="tagline">Electrical Engineering Student &amp; Hardware Designer</p>
+        <p class="tagline">Electronics Engineer · Signal Processing &amp; Communications</p>
         <p class="summary">
-          Fourth-year Electrical &amp; Electronics Engineering student with a passion for
-          digital hardware design, PCB layouts and real-world lab work. Experienced in
-          Verilog, MATLAB and signal validation, I enjoy tackling challenges that sit
-          at the intersection of hardware and software.
+          Electronics Engineer at Ledyero and B.Sc. graduate (with honors) of Ariel University.
+          I work across the full chain: analog front end and PCB, measurement and
+          instrumentation, and the signal-processing algorithms that turn raw data into results.
         </p>
         <div class="contact-links">
           <a href="mailto:Asafd2210@gmail.com" title="Email" class="contact-item">
@@ -67,12 +66,11 @@
   <section id="about" class="section about">
     <h2>About Me</h2>
     <p>
-      I’m currently pursuing my B.Sc. in Electrical &amp; Electronics Engineering at Ariel University,
-      where I’ve developed a strong foundation in digital circuit design, control systems and
-      signal processing. Alongside my studies, I work as a research assistant and teaching
-      assistant, gaining practical experience in lab environments, optical characterization and
-      mentoring fellow students. My goal is to bridge theoretical knowledge with
-      hands-on engineering to build robust, innovative solutions.
+      I hold a B.Sc. in Electrical &amp; Electronics Engineering (with honors) from Ariel University,
+      specialising in signal processing and communications. My final project, a terahertz
+      ellipsometry measurement system built and validated from the optics to the MATLAB processing
+      chain, received a grade of 95. Today I design LED driver and DALI DT8 control electronics at
+      Ledyero, and in my own time I build embedded and IoT systems.
     </p>
   </section>
 
@@ -82,39 +80,35 @@
     <div class="skill-cards">
 
       <div class="skill-card">
-        <h3>Hardware Design</h3>
+        <h3><i class="fa fa-wave-square"></i> Signal Processing &amp; Communications</h3>
         <ul>
-          <li>Verilog &amp; Digital Logic</li>
-          <li>Digital Circuit Design</li>
-          <li>PCB Layout (KiCad)</li>
-          <li>Hardware Debugging &amp; Bring-up</li>
-        </ul>
-
-        <h4 class="skill-subtitle">Programming Languages</h4>
-        <ul>
-          <li>C / C++ (Embedded)</li>
-          <li>Verilog</li>
-          <li>Python</li>
+          <li>MATLAB: FIR/IIR filter design, spectral analysis, windowing</li>
+          <li>ICA, higher-order spectra, least-squares fitting, bootstrap</li>
+          <li>Modulation: DSB/SSB, FSK, BPSK, QAM, OFDM</li>
+          <li>PLL, I/Q demodulation, mixers, channel coding</li>
+          <li>Radar fundamentals, fiber optics</li>
         </ul>
       </div>
 
       <div class="skill-card">
-        <h3><i class="fa fa-desktop"></i> Simulation &amp; Tools</h3>
+        <h3><i class="fa fa-microchip"></i> Hardware &amp; Embedded</h3>
         <ul>
-          <li>MATLAB &amp; Simulink</li>
-          <li>Multisim, PSIM, Control System Toolbox</li>
-          <li>Overleaf &amp; Git</li>
-          <li>Excel &amp; data analysis</li>
+          <li>OrCAD, KiCad, PSpice</li>
+          <li>LED drivers, DALI DT8, MOSFET switching</li>
+          <li>ESP32 / ESP8266, ATtiny85, Arduino</li>
+          <li>C++, Python</li>
+          <li>SolidWorks, 3D printing</li>
         </ul>
       </div>
 
       <div class="skill-card">
-        <h3><i class="fa fa-flask"></i> Lab &amp; Test Equipment</h3>
+        <h3><i class="fa fa-flask"></i> Lab &amp; Instrumentation</h3>
         <ul>
-          <li>Oscilloscopes &amp; FTIR systems</li>
-          <li>Network analyzers</li>
-          <li>Soldering &amp; prototyping</li>
+          <li>Oscilloscopes, lock-in detection</li>
+          <li>THz-TDS and FTIR systems</li>
+          <li>LabVIEW (VISA), closed-loop motion control</li>
           <li>Cryostat &amp; vacuum setups</li>
+          <li>Soldering &amp; prototyping</li>
         </ul>
       </div>
 
@@ -135,6 +129,48 @@
 
     <div class="projects-grid">
 
+      <article class="project-card">
+        <h3>Terahertz Ellipsometry Measurement System</h3>
+        <div class="project-images">
+          <img src="thz_setup.jpg" alt="Two-arm goniometer THz ellipsometer">
+          <img src="thz_fit.png" alt="Harmonic fit of detected field vs analyzer angle">
+        </div>
+        <p class="project-period">B.Sc. final project • 2026 • Grade 95</p>
+        <p>
+          Designed, built and calibrated a variable-analyzer-angle THz ellipsometer around a THz-TDS core,
+          with a full MATLAB processing chain (windowing, FFT, per-bin harmonic fit, drift correction,
+          bootstrap uncertainties, thin-film inversion). Validated on silicon with no calibration offset
+          (β = −0.997 vs. −1, Δ = −0.64° vs. 0°, R² = 0.968), then applied to FePS₃. Also built a
+          LabVIEW-controlled closed-loop motion stage with 0.4 µm/step resolution.
+        </p>
+        <ul class="tech-list">
+          <li>THz-TDS</li>
+          <li>Jones calculus</li>
+          <li>MATLAB</li>
+          <li>LabVIEW</li>
+          <li>Motion control</li>
+        </ul>
+        <p><a href="https://github.com/asafdabush/THz-TDS-Ellipsometry" target="_blank" rel="noopener">Repository &amp; report</a></p>
+      </article>
+
+      <article class="project-card">
+        <h3>POOPCAT: Radar-Triggered Ultrasonic Repeller</h3>
+        <p class="project-period">2026</p>
+        <p>
+          A 24 GHz mmWave radar triggers a 40 kHz ultrasonic burst. An ESP8266 hardware timer generates a
+          complementary carrier and a TC4427 drives the piezo array differentially (10.3 Vpp at 41.3 kHz,
+          measured). The non-blocking firmware state machine runs with Blynk remote control and WiFi failover.
+        </p>
+        <ul class="tech-list">
+          <li>ESP8266</li>
+          <li>mmWave radar</li>
+          <li>C++</li>
+          <li>Ultrasonics</li>
+          <li>IoT</li>
+        </ul>
+        <p><a href="https://github.com/asafdabush/POOPCAT" target="_blank" rel="noopener">Repository</a></p>
+      </article>
+
       <div class="project-card">
         <h3>Smart Soil Moisture Monitor (ESP32/ESP8266 + OLED)</h3>
 
@@ -148,7 +184,7 @@
         <p>
           Built an end-to-end IoT system for a houseplant using a capacitive soil moisture sensor and a 0.96&quot; SSD1306 OLED.
           Implemented practical dry/wet calibration to convert ADC readings into moisture %, sample-averaging for stable measurements,
-          and threshold-based “Water me” alerts. Extended the system to a private Home Assistant cloud (VMware) with live dashboards
+          and threshold-based “Water me” alerts. Integrated into my Raspberry Pi Home Assistant server with live dashboards
           and automations.
         </p>
 
@@ -160,7 +196,7 @@
           <li>SSD1306 OLED</li>
           <li>Calibration</li>
           <li>Home Assistant</li>
-          <li>VMware</li>
+          <li>Raspberry Pi</li>
           <li>IoT Automation</li>
         </ul>
       </div>
@@ -185,15 +221,17 @@
         <h3>Digital Safe-Lock System</h3>
         <p class="project-period">Feb 2025 – May 2025</p>
         <p>
-          Developed a fault-tolerant digital locking mechanism using shift registers and
-          logic ICs. Designed the PCB in KiCad and implemented test routines for
-          reliability under various operating conditions.
+          3-digit combination lock built only from logic ICs, with no microcontroller: CD4015 shift registers
+          for code entry, a NAND match gate, 555 timers driving a 12 V lock through a power MOSFET for 5 s,
+          a CD4516/CD4543 7-segment countdown and a three-strike alarm. PCB designed in KiCad.
         </p>
         <ul class="tech-list">
-          <li>Verilog</li>
+          <li>CMOS digital logic</li>
+          <li>555 timers</li>
           <li>PCB layout (KiCad)</li>
           <li>Hardware debugging</li>
         </ul>
+        <p><a href="https://github.com/asafdabush/Hardware_safe_lock" target="_blank" rel="noopener">Repository</a></p>
       </article>
 
       <article class="project-card">
@@ -203,6 +241,7 @@
           Developed a comprehensive pipeline for processing resting-state EEG data to aid the diagnosis of Parkinson’s disease.
           Preprocessed raw EEG signals (resampling, filtering, artifact removal, FastICA), extracted features using higher-order
           statistics and other measures, and classified segments using SVM and bagged decision trees.
+          Best result: Bagged Trees on the full band, 93.8% accuracy and AUC 0.998 (segment-level 10-fold CV).
         </p>
 
         <ul class="tech-list">
@@ -228,6 +267,7 @@
         </div>
 
         <p>
+          <a href="https://github.com/asafdabush/EEG-Parkinsons-HOS" target="_blank" rel="noopener">Repository</a> |
           <a href="Bio_medical_summery.pdf" target="_blank" rel="noopener">Project Summary (PDF)</a> |
           <a href="preprocessing_paper_faithful.m" target="_blank" rel="noopener">Preprocessing Code</a> |
           <a href="PD_HOS_Full_Extract_PaperFaithful_IC_NO_APPROX.m" target="_blank" rel="noopener">Feature Extraction Code</a> |
@@ -247,20 +287,29 @@
     <h2>Experience</h2>
     <div class="timeline">
       <div class="timeline-item">
-        <h3>Research Assistant</h3>
-        <span class="timeline-period">Oct 2024 – Present • Ariel University</span>
+        <h3>Electronics Engineer</h3>
+        <span class="timeline-period">Mar 2026 – Present • Ledyero (architectural LED luminaires)</span>
         <p>
-          Conduct system-level signal validation and integration testing for infrared
-          optical systems using MATLAB and FTIR instrumentation.
+          Design DALI DT8 tunable-white LED driver and control electronics and lay out PCBs in OrCAD.
+          Integrate electronics with mechanics in SolidWorks, prepare product datasheets and manage component sourcing.
+        </p>
+      </div>
+
+      <div class="timeline-item">
+        <h3>Research Assistant</h3>
+        <span class="timeline-period">Oct 2023 – Jul 2026 • Ariel University</span>
+        <p>
+          Signal validation and integration testing for THz and infrared optical systems using MATLAB
+          and FTIR instrumentation. Automated the THz measurement setup with a LabVIEW-controlled motor stage.
         </p>
       </div>
 
       <div class="timeline-item">
         <h3>Teaching Assistant</h3>
-        <span class="timeline-period">Oct 2024 – Present • Ariel University</span>
+        <span class="timeline-period">Oct 2023 – Jul 2026 • Ariel University</span>
         <p>
-          Lead tutorials and mentor over 40 students in mechanics, electricity and
-          signals &amp; systems courses. Design exercises and guide lab experiments.
+          Led tutorials and mentored over 40 students in mechanics, electricity and
+          signals &amp; systems courses; designed exercises and guided lab experiments.
         </p>
       </div>
 
@@ -281,7 +330,7 @@
     <div class="education-item">
       <h3>B.Sc. Electrical &amp; Electronics Engineering (with honors)</h3>
       <span class="timeline-period">Oct 2022 – Oct 2026 • Ariel University</span>
-      <p>GPA: 86/100</p>
+      <p>GPA: 86/100 · Final project grade: 95</p>
       <p>
         Relevant coursework: Control Systems (100), Signals &amp; Systems (100), Random
         Signals &amp; Noise (95), Digital Circuits (90), Advanced Labs (97)
